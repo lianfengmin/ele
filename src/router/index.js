@@ -12,14 +12,17 @@ const router = new VueRouter({
 
 })
 
-//全局路由前置守卫 验证token
+// 全局路由前置守卫 验证token
 router.beforeEach((to, from, next) => {
-  if (to.path === "/") return next()
 
-  let tokenstr = window.sessionStorage.getItem("token")
-  if (tokenstr) {
-    return next("/login")
+  if (to.path === "/login") {
+    return next()
+  } else {
+    let tokenstr = window.sessionStorage.getItem("token")
+    if (!tokenstr) {
+      return next("/login")
+    }
+    next()
   }
-  next()
 })
 export default router

@@ -5,6 +5,10 @@ html,body,#app,h1,h2,h3,h4,h5.h6,ul,li{
 html,body,#app{
     height: 100%;
 }
+
 .flex{
     display: flex;
+}
+.el-breadcrumb{
+    margin-bottom: 15px;
 }

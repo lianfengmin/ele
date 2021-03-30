@@ -90,7 +90,7 @@ export default {
           this.$message.success(response.meta.msg);
 
           window.sessionStorage.setItem("token", response.data.token);
-          this.$router.push("/");
+          this.$router.push("/home");
         });
       } catch (e) {
         console.log(e);
