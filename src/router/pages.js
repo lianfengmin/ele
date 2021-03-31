@@ -22,6 +22,16 @@ export default [
                 name: 'User',
                 component: () => import("../components/user/user.vue"),
             },
+            {
+                path: '/rights',
+                name: 'Rights',
+                component: () => import("../components/power/rights.vue"),
+            },
+            {
+                path: '/roles',
+                name: 'Roles',
+                component: () => import("../components/power/roles.vue"),
+            },
         ],
     },
     {
