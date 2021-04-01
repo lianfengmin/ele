@@ -32,6 +32,11 @@ export default [
                 name: 'Roles',
                 component: () => import("../components/power/roles.vue"),
             },
+            {
+                path: '/categories',
+                name: 'Categories',
+                component: () => import("../components/goods/cate.vue"),
+            },
         ],
     },
     {

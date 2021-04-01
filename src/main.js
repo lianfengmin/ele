@@ -17,7 +17,9 @@ import "./assets/icons/iconfont.css"//阿里图标样式
 import axios from "./axios/index"
 Vue.prototype.$axios = axios
 
-
+//导入vue树状插件
+import TableTree from 'vue-table-with-tree-grid'
+Vue.component("tree-table", TableTree)
 
 Vue.config.productionTip = false
 
