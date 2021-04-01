@@ -29,6 +29,9 @@ import {
     Select,
     Option,
     Cascader,
+    Alert,
+    Tabs,
+    TabPane
 } from "element-ui"
 
 Vue.prototype.$confirm = MessageBox.confirm
@@ -36,6 +39,9 @@ Vue.prototype.$message = Message
 
 
 
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Alert)
 Vue.use(Cascader)
 Vue.use(Select)
 Vue.use(Option)

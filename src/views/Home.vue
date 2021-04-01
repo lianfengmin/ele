@@ -57,7 +57,6 @@
 
       <!-- 内容页 -->
       <el-main>
-       
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -150,21 +149,14 @@ export default {
     line-height: 6px;
     color: #fff;
     background-color: #4a5064;
+    text-align: center;
     cursor: pointer;
   }
   .el-menu {
     border-right: none;
+
     .iconfont {
       margin-right: 10px;
-    }
-    .el-submenu {
-      /deep/.el-submenu__title {
-        padding-right: 50px !important;
-      }
-    }
-    .el-menu-item {
-      box-sizing: border-box;
-      padding-left: 50px !important;
     }
   }
 }

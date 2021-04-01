@@ -37,6 +37,11 @@ export default [
                 name: 'Categories',
                 component: () => import("../components/goods/cate.vue"),
             },
+            {
+                path: '/params',
+                name: 'Params',
+                component: () => import("../components/goods/params.vue"),
+            },
         ],
     },
     {
