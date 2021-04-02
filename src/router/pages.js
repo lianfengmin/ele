@@ -42,6 +42,16 @@ export default [
                 name: 'Params',
                 component: () => import("../components/goods/params.vue"),
             },
+            {
+                path: '/goods',
+                name: 'Goods',
+                component: () => import("../components/goods/list.vue"),
+            },
+            {
+                path: '/goods/add',
+                name: 'GoodsAdd',
+                component: () => import("../components/goods/add.vue"),
+            },
         ],
     },
     {
