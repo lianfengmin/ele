@@ -52,6 +52,11 @@ export default [
                 name: 'GoodsAdd',
                 component: () => import("../components/goods/add.vue"),
             },
+            {
+                path: '/orders',
+                name: 'Orders',
+                component: () => import("../components/order/order.vue"),
+            },
         ],
     },
     {
