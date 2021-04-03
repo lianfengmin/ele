@@ -57,6 +57,11 @@ export default [
                 name: 'Orders',
                 component: () => import("../components/order/order.vue"),
             },
+            {
+                path: '/reports',
+                name: 'Reports',
+                component: () => import("../components/report/report.vue"),
+            },
         ],
     },
     {
