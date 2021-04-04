@@ -1,0 +1,13 @@
+    CACHE MANIFEST
+    #v0.11
+
+    CACHE:
+
+    js/app.js
+
+
+    NETWORK:
+    ./src/assets/logo.png
+
+    FALLBACK:
+    ./a.html ./b.html

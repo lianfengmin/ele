@@ -90,10 +90,12 @@ export default {
       try {
         let { data: res } = await this.$axios({
           url: 'menus',
+          Headers: { token: sessionStorage.getItem('token') },
         })
 
-        // if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-        this.menuList = [...res.data]
+        if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
+        console.log(res.data)
+        this.menuList = res.data
       } catch (e) {
         console.log(e)
       }

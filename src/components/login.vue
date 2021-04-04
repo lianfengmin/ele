@@ -83,7 +83,6 @@ export default {
             url: "login",
             data: this.loginForm,
           });
-          console.log(response);
           if (response.meta.status !== 200) {
             return this.$message.error(response.meta.msg);
           }

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+
+
 //导入页面级路由
 import routes from "./pages.js"
 
@@ -17,12 +19,19 @@ router.beforeEach((to, from, next) => {
 
   if (to.path === "/login") {
     return next()
-  } else {
-    let tokenstr = window.sessionStorage.getItem("token")
-    if (!tokenstr) {
-      return next("/login")
-    }
-    next()
   }
+  let tokenstr = window.sessionStorage.getItem("token")
+  if (!tokenstr) {
+    return next("/login")
+
+
+  }
+  next()
 })
+
+
+router.afterEach((to, from) => {
+
+})
+
 export default router
